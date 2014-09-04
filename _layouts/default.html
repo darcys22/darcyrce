@@ -1,6 +1,37 @@
----
-theme :
-  name : bootstrap-3
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset=utf-8 />
+  <title> {% if page.title %} {{ page.title }} | {% endif %} Darcy RCE </title>
+  <link rel="stylesheet" href="/css/reset.css" />
+  <link rel="stylesheet" href="/css/mobile.css" />
+  <link rel="stylesheet" href="/css/desktop.css" />
+  <link rel="stylesheet" href="/css/pygments.css" />
+</head>
+<body>
+ 
+  <section id="main">
+    <article class="container">
+
+ 
+    <header>
+      <nav class="main">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="hero"> Darcy RCE</h1>
+    </header>
+    <br>
+ 
+    {{ content }}
+ 
+    <footer>
+    </footer>
+  </article>
+ 
+  </section>
+</body>
+</html>
