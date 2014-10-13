@@ -7,6 +7,11 @@ h1.hero {
   font-size: 6.5em;
   margin: 0.3em 0 0.1em; }
 
+ul
+{
+  list-style-type: none;
+}
+
 .project {
   display: block;
   float: left;
